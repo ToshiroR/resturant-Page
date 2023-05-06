@@ -1,1 +1,1 @@
-console.log("Sup Bitch!");
+document.getElementById("content").appendChild(function(){const t=document.createElement("button");return t.id="stuff",t.textContent="hello",t}());
