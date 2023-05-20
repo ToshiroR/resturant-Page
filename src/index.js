@@ -1,10 +1,25 @@
 import './style.css';
 
-function hello() {
-  const button = document.createElement('button');
+const content = document.querySelector('#content');
 
-  button.id = 'stuff';
-  button.textContent = 'hello';
+function createMenu(name) {
+  let div = document.createElement('div');
+  div.textContent = name;
+  div.id = name;
 
-  return button;
+  return div;
 }
+
+function createHeader() {
+  const header = document.createElement('header');
+  header.classList = 'top-header';
+
+  const hOne = document.createElement('h1');
+  hOne.classList = 'title';
+  hOne.textContent = 'Pupusas R Us';
+  header.appendChild(hOne);
+
+  return header;
+}
+
+content.appendChild(createHeader());
